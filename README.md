@@ -6,7 +6,7 @@ You can use it as a Github Action like this:
 
 _.github/main.workflow_
 ```
-workflow "Lint" {
+workflow "Main" {
   on = "push"
   resolves = ["PHPCS"]
 }
@@ -19,6 +19,11 @@ action "PHPCS" {
 
 _to ignore annotations:_
 ```diff
+workflow "Main" {
+  on = "push"
+  resolves = ["PHPCS"]
+}
+
 action "PHPCS" {
   uses = "docker://oskarstark/phpcs-ga"
   secrets = ["GITHUB_TOKEN"]
