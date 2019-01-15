@@ -1,6 +1,6 @@
 FROM php:7.3-alpine
 
-LABEL "com.github.actions.name"="phpcs"
+LABEL "com.github.actions.name"="OSKAR-phpcs"
 LABEL "com.github.actions.description"="check php coding standards"
 LABEL "com.github.actions.icon"="check"
 LABEL "com.github.actions.color"="blue"
