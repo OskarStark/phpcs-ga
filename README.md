@@ -17,6 +17,21 @@ action "PHPCS" {
 }
 ```
 
+Pass in the files and directories to be scanned as arguments.
+
+```diff
+workflow "Main" {
+  on = "push"
+  resolves = ["PHPCS"]
+}
+
+action "PHPCS" {
+  uses = "docker://oskarstark/phpcs-ga"
+  secrets = ["GITHUB_TOKEN"]
++  args = "/app"
+}
+```
+
 _to ignore annotations:_
 ```diff
 workflow "Main" {
