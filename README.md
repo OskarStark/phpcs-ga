@@ -51,7 +51,7 @@ action "PHPCS" {
 ## Docker
 
 A Docker-Image is built automatically and located here:
-https://cloud.docker.com/u/oskarstark/repository/docker/oskarstark/phpcs-ga
+https://hub.docker.com/r/oskarstark/phpcs-ga
 
 You can run it in any given directory like this:
 
