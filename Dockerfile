@@ -9,7 +9,7 @@ LABEL "repository"="http://github.com/oskarstark/phpcs-ga"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Oskar Stark <oskarstark@googlemail.com>"
 
-RUN wget https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar -O phpcs \
+RUN wget https://github.com/squizlabs/PHP_CodeSniffer/releases/download/3.4.2/phpcs.phar -O phpcs \
     && chmod a+x phpcs \
     && mv phpcs /usr/local/bin/phpcs
 
